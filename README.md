@@ -14,6 +14,11 @@ This presentation uses Jupyter notebooks.  You can either install jupyter locall
 - `pip install notebook`
 - Run: `jupyter notebook functional-python.ipynb`
 
+**Note**:
+
+If you use `pipx`, then the program is `jupyter-notebook`, i.e.:
+
+`jupyter-notebook functional-python.ipynb`
 
 ### Viewing the Slide Show
 
