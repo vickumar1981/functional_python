@@ -15303,7 +15303,7 @@ does something other than simply return a result, for example:</p>
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_18045/2680335701.py</span> in <span class="ansi-cyan-fg">parse_name</span><span class="ansi-blue-fg">(name_dict)</span>
+<span class="ansi-green-fg">/tmp/ipykernel_24556/2680335701.py</span> in <span class="ansi-cyan-fg">parse_name</span><span class="ansi-blue-fg">(name_dict)</span>
 <span class="ansi-green-intense-fg ansi-bold">      4</span>     <span class="ansi-green-fg">try</span><span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">----&gt; 5</span><span class="ansi-red-fg">         </span>n <span class="ansi-blue-fg">=</span> Name<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">**</span>name_dict<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">      6</span>         <span class="ansi-green-fg">return</span> n
@@ -15313,24 +15313,24 @@ does something other than simply return a result, for example:</p>
 During handling of the above exception, another exception occurred:
 
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_18045/1474534612.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
+<span class="ansi-green-fg">/tmp/ipykernel_24556/1474534612.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
 <span class="ansi-green-fg">----&gt; 1</span><span class="ansi-red-fg"> </span>person2 <span class="ansi-blue-fg">=</span> parse_person<span class="ansi-blue-fg">(</span>person2_str<span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/tmp/ipykernel_18045/2680335701.py</span> in <span class="ansi-cyan-fg">parse_person</span><span class="ansi-blue-fg">(json_str)</span>
+<span class="ansi-green-fg">/tmp/ipykernel_24556/2680335701.py</span> in <span class="ansi-cyan-fg">parse_person</span><span class="ansi-blue-fg">(json_str)</span>
 <span class="ansi-green-intense-fg ansi-bold">     20</span>         n <span class="ansi-blue-fg">=</span> parse_name<span class="ansi-blue-fg">(</span>attributes<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;name&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     21</span>     <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">&#39;contact1&#39;</span> <span class="ansi-green-fg">in</span> attributes<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">---&gt; 22</span><span class="ansi-red-fg">         </span>contact1 <span class="ansi-blue-fg">=</span> parse_contact<span class="ansi-blue-fg">(</span>attributes<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;contact1&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;contact1&#39;</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     23</span>     <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">&#39;contact2&#39;</span> <span class="ansi-green-fg">in</span> attributes<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-intense-fg ansi-bold">     24</span>         contact2 <span class="ansi-blue-fg">=</span> parse_contact<span class="ansi-blue-fg">(</span>attributes<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;contact2&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">,</span> <span class="ansi-blue-fg">&#39;contact2&#39;</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-green-fg">/tmp/ipykernel_18045/2680335701.py</span> in <span class="ansi-cyan-fg">parse_contact</span><span class="ansi-blue-fg">(contact_dict, relationship)</span>
+<span class="ansi-green-fg">/tmp/ipykernel_24556/2680335701.py</span> in <span class="ansi-cyan-fg">parse_contact</span><span class="ansi-blue-fg">(contact_dict, relationship)</span>
 <span class="ansi-green-intense-fg ansi-bold">     11</span>     n <span class="ansi-blue-fg">=</span> <span class="ansi-green-fg">None</span>
 <span class="ansi-green-intense-fg ansi-bold">     12</span>     <span class="ansi-green-fg">if</span> <span class="ansi-blue-fg">&#39;name&#39;</span> <span class="ansi-green-fg">in</span> contact_dict<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">---&gt; 13</span><span class="ansi-red-fg">         </span>n <span class="ansi-blue-fg">=</span> parse_name<span class="ansi-blue-fg">(</span>contact_dict<span class="ansi-blue-fg">[</span><span class="ansi-blue-fg">&#39;name&#39;</span><span class="ansi-blue-fg">]</span><span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     14</span>     <span class="ansi-green-fg">return</span> Contact<span class="ansi-blue-fg">(</span>name <span class="ansi-blue-fg">=</span> n<span class="ansi-blue-fg">,</span> relationship <span class="ansi-blue-fg">=</span> relationship<span class="ansi-blue-fg">)</span>
 <span class="ansi-green-intense-fg ansi-bold">     15</span> 
 
-<span class="ansi-green-fg">/tmp/ipykernel_18045/2680335701.py</span> in <span class="ansi-cyan-fg">parse_name</span><span class="ansi-blue-fg">(name_dict)</span>
+<span class="ansi-green-fg">/tmp/ipykernel_24556/2680335701.py</span> in <span class="ansi-cyan-fg">parse_name</span><span class="ansi-blue-fg">(name_dict)</span>
 <span class="ansi-green-intense-fg ansi-bold">      6</span>         <span class="ansi-green-fg">return</span> n
 <span class="ansi-green-intense-fg ansi-bold">      7</span>     <span class="ansi-green-fg">except</span> TypeError <span class="ansi-green-fg">as</span> te<span class="ansi-blue-fg">:</span>
 <span class="ansi-green-fg">----&gt; 8</span><span class="ansi-red-fg">         </span><span class="ansi-green-fg">raise</span> TypeError<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">&#34;Couldn&#39;t deserialize Name: &#34;</span> <span class="ansi-blue-fg">+</span> str<span class="ansi-blue-fg">(</span>te<span class="ansi-blue-fg">)</span><span class="ansi-blue-fg">)</span>
@@ -15492,7 +15492,7 @@ None
 <pre>Done: False
 Done: True
 Result: 101
-Execution time: 4.004692077636719 s
+Execution time: 4.002382040023804 s
 </pre>
 </div>
 </div>
@@ -15557,7 +15557,7 @@ Execution time: 4.004692077636719 s
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Result: 150
-Execution time: 5.005802154541016 s
+Execution time: 5.007925033569336 s
 </pre>
 </div>
 </div>
@@ -15627,7 +15627,7 @@ Execution time: 5.005802154541016 s
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Unable to compute result due to exception
 Error getting result
-Execution time: 3.00226092338562 s
+Execution time: 3.0049855709075928 s
 </pre>
 </div>
 </div>
@@ -15659,8 +15659,8 @@ Execution time: 3.00226092338562 s
     <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
     <span class="k">return</span> <span class="mi">50</span>
 
-<span class="k">def</span> <span class="nf">handle_result</span><span class="p">(</span><span class="n">results</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">],</span> <span class="n">start_time</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">results</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">def</span> <span class="nf">handle_result</span><span class="p">(</span><span class="n">results</span><span class="p">:</span> <span class="n">Try</span><span class="p">[</span><span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]],</span> <span class="n">start_time</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Result: </span><span class="si">{</span><span class="nb">sum</span><span class="p">(</span><span class="n">results</span><span class="o">.</span><span class="n">get</span><span class="p">())</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
     <span class="n">execution_time</span> <span class="o">=</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span>
     <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Execution time: </span><span class="si">{</span><span class="n">execution_time</span><span class="si">}</span><span class="s2"> s&quot;</span><span class="p">)</span>
     
@@ -15670,7 +15670,7 @@ Execution time: 3.00226092338562 s
 
 <span class="c1"># Convert List[Future[int]] -&gt; Future[List[int]] </span>
 <span class="n">Future</span><span class="o">.</span><span class="n">traverse</span><span class="p">([</span><span class="n">result1</span><span class="p">,</span> <span class="n">result2</span><span class="p">])</span>\
-    <span class="o">.</span><span class="n">on_complete</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">handle_result</span><span class="p">(</span><span class="n">v</span><span class="o">.</span><span class="n">get</span><span class="p">(),</span> <span class="n">start_time</span><span class="p">))</span>
+    <span class="o">.</span><span class="n">on_complete</span><span class="p">(</span><span class="k">lambda</span> <span class="n">v</span><span class="p">:</span> <span class="n">handle_result</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">start_time</span><span class="p">))</span>
 </pre></div>
 
      </div>
@@ -15693,7 +15693,7 @@ Execution time: 3.00226092338562 s
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>Result: 150
-Execution time: 5.003015041351318 s
+Execution time: 5.008577346801758 s
 </pre>
 </div>
 </div>
