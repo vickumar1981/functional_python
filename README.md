@@ -2,7 +2,7 @@
 
 #### By Vic Kumar | [https://github.com/vickumar1981/functional_python](https://github.com/vickumar1981/functional_python)
 
-##### Salt Lake City, UT  |  PyCon 2022
+##### Salt Lake City, UT  |  PyCon 2022 | [Video](https://www.youtube.com/watch?v=x7sQVLO3JJA)
 
 ![Functional Programming Image](img/fp-img.png)
 
